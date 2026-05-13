@@ -67,7 +67,7 @@ Available for Virtual Assistant, Customer Support, Team Leadership, and Administ
 
 | Contact | Details |
 |---------|---------|
-| **Email** | your@email.com |
+| **Email** | efrencapangpangan@gmail.com |
 | **Location** | Philippines |
 | **Availability** | Open for Freelance & Full-time |
 
