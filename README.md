@@ -1,80 +1,52 @@
-export default function PortfolioWebsite() {
-  const profileImage = '/profile.jpg';
+# Hi there! 👋 I'm Efren Capangpangan
 
-  const skills = [
-    'Customer Support',
-    'Team Leadership',
-    'Virtual Assistance',
-    'Email & Chat Support',
-    'Operations Management',
-    'Data Entry',
-    'Delivery Coordination',
-    'Escalation Handling',
-    'Administrative Support',
-    'Performance Coaching'
-  ];
+<div align="center">
+  
+![Profile Image](https://github.com/efrencapangpangan/silver-telegram/raw/main/profile.jpg)
 
-  return (
-    <div className="min-h-screen bg-gray-100 text-gray-800">
+### 💼 Customer Support Manager | Virtual Assistant | Team Leader
 
-      {/* HERO SECTION */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.
 
-          {/* LEFT SIDE */}
-          <div>
-            <h1 className="text-5xl font-bold leading-tight mb-4">
-              Efren Capangpangan
-            </h1>
+[Hire Me](mailto:your-email@example.com) • [View Portfolio](#skills)
 
-            <p className="text-xl mb-6">
-              Customer Support Manager | Virtual Assistant | Team Leader
-            </p>
+</div>
 
-            <p className="text-lg text-blue-100 mb-8">
-              Experienced professional with a strong background in customer
-              support, team leadership, operations management, and virtual
-              assistance.
-            </p>
+---
 
-            <div className="flex gap-4 flex-wrap">
-              <button className="bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition">
-                Hire Me
-              </button>
+## 🎯 About Me
 
-              <button className="border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition">
-                View Portfolio
-              </button>
-            </div>
-          </div>
+I'm a dedicated customer support manager and virtual assistant with proven expertise in:
+- Managing customer support teams
+- Leading virtual operations
+- Handling complex escalations
+- Administrative excellence
 
-          {/* RIGHT SIDE PROFILE IMAGE */}
-          <div className="flex justify-center">
-            <div className="relative group">
+---
 
-              <img
-                src={profileImage}
-                alt="Efren Capangpangan"
-                className="w-full max-w-lg rounded-3xl shadow-2xl border-4 border-white/20 object-cover"
-              />
+## 🛠️ Skills
 
-              <div className="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md rounded-2xl px-5 py-4 text-white max-w-sm">
-                <h2 className="text-2xl font-semibold mb-2">
-                  Professional Virtual Assistant
-                </h2>
+- **Customer Support** - Expert in email, chat, and phone support
+- **Team Leadership** - Building and coaching high-performing teams
+- **Virtual Assistance** - End-to-end administrative support
+- **Operations Management** - Process optimization and coordination
+- **Data Entry** - Accurate and efficient data management
+- **Delivery Coordination** - Logistics and fulfillment management
+- **Escalation Handling** - Resolving complex customer issues
+- **Administrative Support** - Comprehensive business support
+- **Performance Coaching** - Employee development and training
+- **Email & Chat Support** - Multi-channel communication
 
-                <p className="text-sm text-gray-200 leading-relaxed">
-                  Experienced in customer support, team leadership,
-                  operations management, and administrative assistance.
-                </p>
-              </div>
+---
 
-            </div>
-          </div>
+## 📊 GitHub Stats
 
-        </div>
-      </section>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=efrencapangpangan&show_icons=true&theme=tokyonight)
 
-    </div>
-  );
-}
+---
+
+## 🌐 Let's Connect
+
+Feel free to reach out if you'd like to collaborate or discuss opportunities!
+
+**Made with ❤️ by Efren Capangpangan**
