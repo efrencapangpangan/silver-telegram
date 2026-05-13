@@ -68,6 +68,9 @@ Available for Virtual Assistant, Customer Support, Team Leadership, and Administ
 | Contact | Details |
 |---------|---------|
 | **Email** | efrencapangpangan@gmail.com |
+| **Phone** | 0963 972 4519 |
+| **Secondary Phone** | 09463162505 |
+| **Facebook** | [facebook.com/share/1KzfX6zQ51/](https://www.facebook.com/share/1KzfX6zQ51/) |
 | **Location** | Philippines |
 | **Availability** | Open for Freelance & Full-time |
 
