@@ -1,52 +1,76 @@
-# Hi there! 👋 I'm Efren Capangpangan
+# 👋 Efren Capangpangan
 
-<div align="center">
-  
-![Profile Image](https://github.com/efrencapangpangan/silver-telegram/raw/main/profile.jpg)
-
-### 💼 Customer Support Manager | Virtual Assistant | Team Leader
+## Customer Support Manager | Virtual Assistant | Team Leader
 
 Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.
 
-[Hire Me](mailto:your-email@example.com) • [View Portfolio](#skills)
-
-</div>
+![Profile Image](https://github.com/efrencapangpangan/silver-telegram/raw/main/profile.jpg)
 
 ---
 
-## 🎯 About Me
+## 💼 Professional Summary
 
-I'm a dedicated customer support manager and virtual assistant with proven expertise in:
-- Managing customer support teams
-- Leading virtual operations
-- Handling complex escalations
-- Administrative excellence
+Dedicated customer support and operations professional with years of experience in leadership, coaching, customer satisfaction, and administrative support. Skilled in managing teams, solving problems, and delivering exceptional service.
 
 ---
 
-## 🛠️ Skills
+## 🛠️ Skills & Expertise
 
-- **Customer Support** - Expert in email, chat, and phone support
-- **Team Leadership** - Building and coaching high-performing teams
-- **Virtual Assistance** - End-to-end administrative support
-- **Operations Management** - Process optimization and coordination
-- **Data Entry** - Accurate and efficient data management
-- **Delivery Coordination** - Logistics and fulfillment management
-- **Escalation Handling** - Resolving complex customer issues
-- **Administrative Support** - Comprehensive business support
-- **Performance Coaching** - Employee development and training
-- **Email & Chat Support** - Multi-channel communication
+A combination of leadership, customer support, and operational excellence.
+
+| | | | | |
+|---|---|---|---|---|
+| Customer Support | Team Leadership | Virtual Assistance | Email & Chat Support | Operations Management |
+| Data Entry | Delivery Coordination | Escalation Handling | Administrative Support | Performance Coaching |
 
 ---
 
-## 📊 GitHub Stats
+## 💼 Work Experience
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=efrencapangpangan&show_icons=true&theme=tokyonight)
+### Team Manager
+**Customer Service & Delivery Operations** | 4 Years
+
+Managed customer service agents, monitored performance, handled escalations, and improved customer satisfaction in a fast-paced environment.
 
 ---
 
-## 🌐 Let's Connect
+### Specialized Customer Support
+**Lowes Delivery Support** | 1 Year+
 
-Feel free to reach out if you'd like to collaborate or discuss opportunities!
+Handled delivery coordination, customer concerns, scheduling, and issue resolution for home improvement deliveries.
+
+---
+
+### Appraiser Manager
+**Pawnshop Branch Operations** | 4 Years
+
+Managed branch operations, customer transactions, appraisals, and financial services while ensuring operational efficiency.
+
+---
+
+### Teller
+**Pawnshop Services** | 1 Year
+
+Handled customer transactions, cash management, and day-to-day customer service responsibilities.
+
+---
+
+## 📖 About Me
+
+I am passionate about helping businesses improve customer satisfaction, team performance, and daily operations. My experience in customer support, leadership, and administrative management has helped me build strong communication, problem-solving, and organizational skills.
+
+---
+
+## 🤝 Let's Work Together
+
+Available for Virtual Assistant, Customer Support, Team Leadership, and Administrative Support opportunities.
+
+| Contact | Details |
+|---------|---------|
+| **Email** | your@email.com |
+| **Location** | Philippines |
+| **Availability** | Open for Freelance & Full-time |
+
+---
 
 **Made with ❤️ by Efren Capangpangan**
