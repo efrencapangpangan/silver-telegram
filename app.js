@@ -43,33 +43,33 @@ function PortfolioWebsite() {
     }
   ];
 
-  return (
-  <div className="min-h-screen bg-gray-100 text-gray-800">
-    {/* Hero Section */}
-    <img
-  src="https://raw.githubusercontent.com/efrencapangpangan/silver-telegram/main/public/profile.jpg"
-  alt="Efren Capangpangan"
-  className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl"
-/>
-    <h1 className="text-5xl font-bold leading-tight mb-4">Efren Capangpangan</h1>
-    <p className="text-xl mb-4">Customer Support Manager | Virtual Assistant | Team Leader</p>
-    <div className="flex gap-4">
-      <a
-        href="mailto:eefrancapangpangan@gmail.com"
-        className="bg-white text-blue-700 px-6 py-3 rounded-full shadow-lg hover:scale-105 transition"
-      >
-        Hire Me
-      </a>
-      <button className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 transition">
-        View Portfolio
-      </button>
-    </div>
-    {/* Skills & Expertise Section */}
-    <section className="mt-8">
-      {/* Your skill buttons */}
-    </section>
-  </div>
-);
+  React.createElement('div', { key: 'hero-text' }, [
+  React.createElement('img', {
+    key: 'profile-image',
+    src: './public/profile.jpg',
+    alt: 'Efren Capangpangan',
+    className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
+  }),
+
+  React.createElement('h1', { key: 'h1', className: 'text-5xl font-bold leading-tight mb-4' }, 'Efren Capangpangan'),
+
+  React.createElement('p', { key: 'p1', className: 'text-xl mb-6' }, 'Customer Support Manager | Virtual Assistant | Team Leader'),
+
+  React.createElement('p', { key: 'p2', className: 'text-lg text-blue-100 mb-8' }, 'Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.'),
+
+  React.createElement('div', { key: 'buttons', className: 'flex gap-4 flex-wrap' }, [
+    React.createElement('a', {
+      key: 'btn1',
+      href: 'mailto:efrencapangpangan@gmail.com',
+      className: 'bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition'
+    }, 'Hire Me'),
+
+    React.createElement('button', {
+      key: 'btn2',
+      className: 'border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition'
+    }, 'View Portfolio')
+  ])
+]),
 
     // Skills Section
     React.createElement('section', { key: 'skills', className: 'py-16 px-6 max-w-6xl mx-auto' }, [
