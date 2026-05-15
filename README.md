@@ -4,7 +4,7 @@
 
 Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.
 
-![Profile Image](https://github.com/efrencapangpangan/silver-telegram/raw/main/profile.jpg)
+(https://github.com/efrencapangpangan/silver-telegram/raw/main/profile.jpg)
 
 ---
 
