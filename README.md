@@ -4,7 +4,7 @@
 
 Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.
 
-(const profileImage = '/profile.jpg';)
+const profileImage = '/profile.jpg'
 
 ---
 
