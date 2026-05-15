@@ -47,10 +47,10 @@ function PortfolioWebsite() {
   <div className="min-h-screen bg-gray-100 text-gray-800">
     {/* Hero Section */}
     <img
-      src="public/profile.jpg"
-      alt="Efran Capangpangan"
-      className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl"
-    />
+  src="https://raw.githubusercontent.com/efrencapangpangan/silver-telegram/main/public/profile.jpg"
+  alt="Efren Capangpangan"
+  className="w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl"
+/>
     <h1 className="text-5xl font-bold leading-tight mb-4">Efren Capangpangan</h1>
     <p className="text-xl mb-4">Customer Support Manager | Virtual Assistant | Team Leader</p>
     <div className="flex gap-4">
