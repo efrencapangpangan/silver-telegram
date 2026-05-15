@@ -46,18 +46,30 @@ function PortfolioWebsite() {
   React.createElement('div', { key: 'hero-text' }, [
   React.createElement('img', {
     key: 'profile-image',
-    src: './public/profile.jpg',
+    src: 'https://raw.githubusercontent.com/efrencapangpangan/silver-telegram/main/public/profile.jpg',
     alt: 'Efren Capangpangan',
     className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
   }),
 
-  React.createElement('h1', { key: 'h1', className: 'text-5xl font-bold leading-tight mb-4' }, 'Efren Capangpangan'),
+  React.createElement('h1', {
+    key: 'h1',
+    className: 'text-5xl font-bold leading-tight mb-4'
+  }, 'Efren Capangpangan'),
 
-  React.createElement('p', { key: 'p1', className: 'text-xl mb-6' }, 'Customer Support Manager | Virtual Assistant | Team Leader'),
+  React.createElement('p', {
+    key: 'p1',
+    className: 'text-xl mb-6'
+  }, 'Customer Support Manager | Virtual Assistant | Team Leader'),
 
-  React.createElement('p', { key: 'p2', className: 'text-lg text-blue-100 mb-8' }, 'Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.'),
+  React.createElement('p', {
+    key: 'p2',
+    className: 'text-lg text-blue-100 mb-8'
+  }, 'Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.'),
 
-  React.createElement('div', { key: 'buttons', className: 'flex gap-4 flex-wrap' }, [
+  React.createElement('div', {
+    key: 'buttons',
+    className: 'flex gap-4 flex-wrap'
+  }, [
     React.createElement('a', {
       key: 'btn1',
       href: 'mailto:efrencapangpangan@gmail.com',
