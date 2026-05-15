@@ -45,25 +45,33 @@ function PortfolioWebsite() {
 
   return React.createElement('div', { className: 'min-h-screen bg-gray-100 text-gray-800' }, [
     // Hero Section
-    React.createElement('section', { key: 'hero', className: 'bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6' },
-      React.createElement('div', { className: 'max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center' }, [
-        React.createElement('div', { key: 'hero-text' }, [
-          React.createElement('h1', { key: 'h1', className: 'text-5xl font-bold leading-tight mb-4' }, 'Efren Capangpangan'),
-          React.createElement('p', { key: 'p1', className: 'text-xl mb-6' }, 'Customer Support Manager | Virtual Assistant | Team Leader'),
-          React.createElement('p', { key: 'p2', className: 'text-lg text-blue-100 mb-8' }, 'Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.'),
-          React.createElement('div', { key: 'buttons', className: 'flex gap-4 flex-wrap' }, [
-            React.createElement('a', { key: 'btn1', href: 'mailto:efrencapangpangan@gmail.com', className: 'bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition' }, 'Hire Me'),
-            React.createElement('button', { key: 'btn2', className: 'border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition' }, 'View Portfolio')
-          ])
-        ]),
-        React.createElement('div', { key: 'hero-card', className: 'flex justify-center' },
-          React.createElement('div', { className: 'bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl w-full max-w-md' }, [
-            React.createElement('h2', { key: 'card-h2', className: 'text-2xl font-semibold mb-4' }, 'Professional Summary'),
-            React.createElement('p', { key: 'card-p', className: 'text-blue-100 leading-relaxed' }, 'Dedicated customer support and operations professional with years of experience in leadership, coaching, customer satisfaction, and administrative support. Skilled in managing teams, solving problems, and delivering exceptional service.')
-          ])
-        )
-      ])
-    ),
+   React.createElement('div', { key: 'hero-text' }, [
+  React.createElement('img', {
+    key: 'profile-image',
+    src: './public/profile.jpg',
+    alt: 'Efren Capangpangan',
+    className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
+  }),
+
+  React.createElement('h1', { key: 'h1', className: 'text-5xl font-bold leading-tight mb-4' }, 'Efren Capangpangan'),
+
+  React.createElement('p', { key: 'p1', className: 'text-xl mb-6' }, 'Customer Support Manager | Virtual Assistant | Team Leader'),
+
+  React.createElement('p', { key: 'p2', className: 'text-lg text-blue-100 mb-8' }, 'Experienced professional with a strong background in customer support, team leadership, operations management, and virtual assistance.'),
+
+  React.createElement('div', { key: 'buttons', className: 'flex gap-4 flex-wrap' }, [
+    React.createElement('a', {
+      key: 'btn1',
+      href: 'mailto:efrencapangpangan@gmail.com',
+      className: 'bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition'
+    }, 'Hire Me'),
+
+    React.createElement('button', {
+      key: 'btn2',
+      className: 'border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition'
+    }, 'View Portfolio')
+  ])
+]),
 
     // Skills Section
     React.createElement('section', { key: 'skills', className: 'py-16 px-6 max-w-6xl mx-auto' }, [
