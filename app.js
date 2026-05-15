@@ -45,13 +45,12 @@ function PortfolioWebsite() {
 
   return React.createElement('div', { className: 'min-h-screen bg-gray-100 text-gray-800' }, [
     // Hero Section
-   React.createElement('div', { key: 'hero-text' }, [
-  React.createElement('img', {
-    key: 'profile-image',
-    src: '/profile.jpg',
-    alt: 'Efren Capangpangan',
-    className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
-  }),
+   React.createElement('img', {
+  key: 'profile-image',
+  src: 'public/profile.jpg',
+  alt: 'Efren Capangpangan',
+  className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
+}),
 
   React.createElement('h1', { key: 'h1', className: 'text-5xl font-bold leading-tight mb-4' }, 'Efren Capangpangan'),
 
