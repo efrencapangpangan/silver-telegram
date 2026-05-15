@@ -48,7 +48,7 @@ function PortfolioWebsite() {
    React.createElement('div', { key: 'hero-text' }, [
   React.createElement('img', {
     key: 'profile-image',
-    src: 'profile.jpg',
+    src: '/profile.jpg',
     alt: 'Efren Capangpangan',
     className: 'w-40 h-40 rounded-full object-cover border-4 border-white shadow-xl mb-6'
   }),
