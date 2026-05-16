@@ -3,119 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Efren Capangpangan Portfolio</title>
-
   <style>
-    body {
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
       color: #333;
+      line-height: 1.6;
+      background-color: #f4f4f4;
     }
 
+    /* Header Styles */
     header {
-      background: linear-gradient(to right, #007acc, #004f99);
-      color: white;
+      background-color: #0f3d63;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    /* Hero / Banner Section */
+    .hero {
+      background: url('your-background-image.jpg') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 50px 20px;
+      color: #fff;
+      padding: 0 20px;
     }
 
-    .profile-img {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-top: 20px;
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
     }
 
+    .hero p {
+      max-width: 600px;
+      font-size: 18px;
+    }
+
+    /* Content Sections */
     section {
       max-width: 1000px;
-      margin: 30px auto;
-      background: white;
+      margin: 40px auto;
+      background: #fff;
       padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
 
-    h1, h2, h3 {
-      margin-top: 0;
+    section h2 {
+      margin-bottom: 20px;
+      color: #0f3d63;
     }
 
-    h2 {
-      color: #007acc;
-    }
-
+    /* Skills Grid */
     .skills {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
-      margin-top: 20px;
     }
 
     .skill-box {
-      background: #007acc;
-      color: white;
+      background-color: #0f3d63;
+      color: #fff;
       padding: 15px;
+      border-radius: 8px;
       text-align: center;
-      border-radius: 10px;
       font-weight: bold;
     }
 
+    /* Experience */
     .experience {
-      margin-bottom: 25px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
+      margin-bottom: 20px;
     }
 
-    .experience:last-child {
-      border-bottom: none;
-    }
-
+    /* Footer Styles */
     footer {
+      background-color: #222;
+      color: #fff;
       text-align: center;
-      background: #222;
-      color: white;
       padding: 20px;
       margin-top: 40px;
     }
 
+    /* Contact Box */
     .contact-box {
       background: #f9f9f9;
       padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    /* Buttons & Links */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #0f3d63;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <h1>👋 Efren Capangpangan</h1>
-
-  <h3>
-    Customer Support Manager | Virtual Assistant | Team Leader
-  </h3>
-
-  <img src="profile.jpg" alt="Profile" class="profile-img" />
+  <h1>Efren Capangpangan</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a class="btn" href="#hire">Hire Me</a>
+  </nav>
 </header>
 
-<section>
-  <h2>About Me</h2>
+<!-- Hero / Banner -->
+<div class="hero" style="background-image: url('your-background-image.jpg');">
+  <h2>Customer Support Leader. Problem Solver.</h2>
+  <p>Your Reliable Virtual Assistant.</p>
+</div>
 
-  <p>
-    Experienced professional with strong background in customer support,
-    team leadership, operations management, and virtual assistance.
-    Passionate about helping businesses improve customer satisfaction,
-    workflow efficiency, and daily operations.
-  </p>
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>Experienced professional with a strong background in customer support, leadership, and operations. Passionate about helping businesses succeed with reliable virtual assistance and excellent support.</p>
 </section>
 
-<section>
+<!-- Skills & Expertise -->
+<section id="skills">
   <h2>Skills & Expertise</h2>
-
   <div class="skills">
     <div class="skill-box">Customer Support</div>
     <div class="skill-box">Team Leadership</div>
@@ -130,54 +180,25 @@
   </div>
 </section>
 
-<section>
+<!-- Experience -->
+<section id="experience">
   <h2>Work Experience</h2>
-
   <div class="experience">
     <h3>Team Manager (4 Years)</h3>
     <p><strong>Customer Service & Delivery Operations</strong></p>
-
-    <p>
-      Managed customer service agents, monitored performance,
-      handled escalations, and improved customer satisfaction
-      in a fast-paced environment.
-    </p>
+    <p>Managed customer service agents, monitored performance, handled escalations, and improved customer satisfaction in a fast-paced environment.</p>
   </div>
-
   <div class="experience">
     <h3>Specialized Customer Support (1 Year+)</h3>
     <p><strong>Lowes Delivery Support</strong></p>
-
-    <p>
-      Handled delivery coordination, customer concerns,
-      scheduling, and issue resolution for home improvement deliveries.
-    </p>
+    <p>Handled delivery coordination, customer concerns, scheduling, and issue resolution for home improvement deliveries.</p>
   </div>
-
-  <div class="experience">
-    <h3>Appraiser Manager (4 Years)</h3>
-    <p><strong>Pawnshop Branch Operations</strong></p>
-
-    <p>
-      Managed branch operations, customer transactions,
-      appraisals, and financial services while ensuring operational efficiency.
-    </p>
-  </div>
-
-  <div class="experience">
-    <h3>Teller (1 Year)</h3>
-    <p><strong>Pawnshop Services</strong></p>
-
-    <p>
-      Handled customer transactions, cash management,
-      and day-to-day customer service responsibilities.
-    </p>
-  </div>
+  <!-- Add more experiences as needed -->
 </section>
 
-<section>
+<!-- Contact -->
+<section id="contact">
   <h2>Contact Information</h2>
-
   <div class="contact-box">
     <p><strong>Email:</strong> efrencapangpangan@gmail.com</p>
     <p><strong>Location:</strong> Philippines</p>
@@ -185,6 +206,7 @@
   </div>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>© 2026 Efren Capangpangan Portfolio</p>
 </footer>
