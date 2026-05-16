@@ -44,7 +44,7 @@
       z-index: 0;
     }
 
-    /* Container inside hero for layout: image + skills */
+    /* Container inside hero for layout: skills on left, image on right */
     .hero-container {
       display: flex;
       width: 100%;
@@ -54,26 +54,8 @@
       z-index: 1; /* above overlay */
     }
 
-    /* Left: Profile picture styling */
-    .profile-left {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    /* Profile image without fade, larger size */
-    .profile-left img {
-      width: 600px;
-      max-width: 100%;
-      height: auto;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    /* Right: Skills & Expertise */
-    .expertise-right {
+    /* Skills & Expertise on the left */
+    .expertise-left {
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -81,7 +63,7 @@
       padding: 20px;
     }
 
-    .expertise-right h2 {
+    .expertise-left h2 {
       font-size: 28px;
       margin-bottom: 20px;
       border-bottom: 2px solid #0f3d63;
@@ -108,6 +90,23 @@
       background-color: #1a5c7b;
     }
 
+    /* Profile picture on the right */
+    .profile-right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .profile-right img {
+      width: 600px;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
     /* Hire Me Button */
     .hire-me-btn {
       margin-top: 20px;
@@ -132,7 +131,7 @@
         flex-direction: column;
         align-items: center;
       }
-      .profile-left, .expertise-right {
+      .expertise-left, .profile-right {
         width: 100%;
         padding: 10px;
       }
@@ -195,12 +194,8 @@ footer {
 <!-- Hero / Banner with layout -->
 <div class="hero">
   <div class="hero-container">
-    <!-- Left: Profile Picture -->
-    <div class="profile-left">
-      <img src="profile.jpg" alt="Efren Profile" />
-    </div>
-    <!-- Right: Skills & Expertise -->
-    <div class="expertise-right">
+    <!-- Skills & Expertise on the left -->
+    <div class="expertise-left">
       <h2>Skills & Expertise</h2>
       <div class="skills">
         <div class="skill-box">Customer Support</div>
@@ -215,6 +210,10 @@ footer {
         <div class="skill-box">Performance Coaching</div>
       </div>
       <button class="hire-me-btn">Hire Me</button>
+    </div>
+    <!-- Profile picture on the right -->
+    <div class="profile-right">
+      <img src="profile.jpg" alt="Efren Profile" />
     </div>
   </div>
 </div>
