@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Efren Capangpangan Portfolio</title>
 
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
+      font-family: Arial, sans-serif;
       background: #f4f4f4;
       color: #333;
     }
 
     header {
-      background: #007acc;
+      background: linear-gradient(to right, #007acc, #004f99);
       color: white;
       text-align: center;
-      padding: 30px;
+      padding: 50px 20px;
     }
 
     .profile-img {
@@ -32,15 +31,46 @@
     }
 
     section {
-      max-width: 900px;
-      margin: 20px auto;
+      max-width: 1000px;
+      margin: 30px auto;
       background: white;
-      padding: 25px;
-      border-radius: 10px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
     }
 
     h2 {
       color: #007acc;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .skill-box {
+      background: #007acc;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .experience {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .experience:last-child {
+      border-bottom: none;
     }
 
     footer {
@@ -48,9 +78,16 @@
       background: #222;
       color: white;
       padding: 20px;
+      margin-top: 40px;
+    }
+
+    .contact-box {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
   </style>
-
 </head>
 
 <body>
@@ -62,199 +99,95 @@
     Customer Support Manager | Virtual Assistant | Team Leader
   </h3>
 
-  <img
-    src="profile.jpg"
-    alt="Profile"
-    class="profile-img"
-  />
+  <img src="profile.jpg" alt="Profile" class="profile-img" />
 </header>
 
-export default function PortfolioWebsite() {
-  const profileImage = '/profile.jpg';
-  const skills = [
-    'Customer Support',
-    'Team Leadership',
-    'Virtual Assistance',
-    'Email & Chat Support',
-    'Operations Management',
-    'Data Entry',
-    'Delivery Coordination',
-    'Escalation Handling',
-    'Administrative Support',
-    'Performance Coaching'
-  ];
+<section>
+  <h2>About Me</h2>
 
-  const experiences = [
-    {
-      title: 'Team Manager',
-      company: 'Customer Service & Delivery Operations',
-      years: '4 Years',
-      description:
-        'Managed customer service agents, monitored performance, handled escalations, and improved customer satisfaction in a fast-paced environment.'
-    },
-    {
-      title: 'Specialized Customer Support',
-      company: 'Lowes Delivery Support',
-      years: '1 Year+',
-      description:
-        'Handled delivery coordination, customer concerns, scheduling, and issue resolution for home improvement deliveries.'
-    },
-    {
-      title: 'Appraiser Manager',
-      company: 'Pawnshop Branch Operations',
-      years: '4 Years',
-      description:
-        'Managed branch operations, customer transactions, appraisals, and financial services while ensuring operational efficiency.'
-    },
-    {
-      title: 'Teller',
-      company: 'Pawnshop Services',
-      years: '1 Year',
-      description:
-        'Handled customer transactions, cash management, and day-to-day customer service responsibilities.'
-    }
-  ];
+  <p>
+    Experienced professional with strong background in customer support,
+    team leadership, operations management, and virtual assistance.
+    Passionate about helping businesses improve customer satisfaction,
+    workflow efficiency, and daily operations.
+  </p>
+</section>
 
-  return (
-    <div className="min-h-screen bg-gray-100 text-gray-800">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 className="text-5xl font-bold leading-tight mb-4">
-              Efren Capangpangan
-            </h1>
-            <p className="text-xl mb-6">
-              Customer Support Manager | Virtual Assistant | Team Leader
-            </p>
-            <p className="text-lg text-blue-100 mb-8">
-              Experienced professional with a strong background in customer
-              support, team leadership, operations management, and virtual
-              assistance.
-            </p>
+<section>
+  <h2>Skills & Expertise</h2>
 
-            <div className="flex gap-4 flex-wrap">
-              <button className="bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition">
-                Hire Me
-              </button>
-              <button className="border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition">
-                View Portfolio
-              </button>
-            </div>
-          </div>
+  <div class="skills">
+    <div class="skill-box">Customer Support</div>
+    <div class="skill-box">Team Leadership</div>
+    <div class="skill-box">Virtual Assistance</div>
+    <div class="skill-box">Email & Chat Support</div>
+    <div class="skill-box">Operations Management</div>
+    <div class="skill-box">Data Entry</div>
+    <div class="skill-box">Delivery Coordination</div>
+    <div class="skill-box">Escalation Handling</div>
+    <div class="skill-box">Administrative Support</div>
+    <div class="skill-box">Performance Coaching</div>
+  </div>
+</section>
 
-          <div className="flex justify-center">
-            <div className="relative group">
-              <img
-                src={profileImage}
-                alt="Efren Capangpangan"
-                className="w-full max-w-lg rounded-3xl shadow-2xl border-4 border-white/20 object-cover"
-              />
+<section>
+  <h2>Work Experience</h2>
 
-              <div className="absolute bottom-6 left-6 bg-black/50 backdrop-blur-md rounded-2xl px-5 py-4 text-white max-w-sm">
-                <h2 className="text-2xl font-semibold mb-2">
-                  Professional Virtual Assistant
-                </h2>
-                <p className="text-sm text-gray-200 leading-relaxed">
-                  Experienced in customer support, team leadership,
-                  operations management, and administrative assistance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="experience">
+    <h3>Team Manager (4 Years)</h3>
+    <p><strong>Customer Service & Delivery Operations</strong></p>
 
-      {/* Skills Section */}
-      <section className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-3">Skills & Expertise</h2>
-          <p className="text-gray-600">
-            A combination of leadership, customer support, and operational excellence.
-          </p>
-        </div>
+    <p>
+      Managed customer service agents, monitored performance,
+      handled escalations, and improved customer satisfaction
+      in a fast-paced environment.
+    </p>
+  </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl shadow-md p-5 text-center font-medium hover:shadow-xl hover:-translate-y-1 transition"
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
-      </section>
+  <div class="experience">
+    <h3>Specialized Customer Support (1 Year+)</h3>
+    <p><strong>Lowes Delivery Support</strong></p>
 
-      {/* Experience Section */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-3">Work Experience</h2>
-            <p className="text-gray-600">
-              Professional experience across customer support, operations, and leadership.
-            </p>
-          </div>
+    <p>
+      Handled delivery coordination, customer concerns,
+      scheduling, and issue resolution for home improvement deliveries.
+    </p>
+  </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="bg-gray-50 rounded-3xl p-8 shadow-md hover:shadow-xl transition"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-semibold">{exp.title}</h3>
-                  <span className="bg-blue-100 text-blue-700 px-4 py-1 rounded-full text-sm font-medium">
-                    {exp.years}
-                  </span>
-                </div>
+  <div class="experience">
+    <h3>Appraiser Manager (4 Years)</h3>
+    <p><strong>Pawnshop Branch Operations</strong></p>
 
-                <p className="font-medium text-gray-700 mb-3">{exp.company}</p>
-                <p className="text-gray-600 leading-relaxed">{exp.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+    <p>
+      Managed branch operations, customer transactions,
+      appraisals, and financial services while ensuring operational efficiency.
+    </p>
+  </div>
 
-      {/* About Section */}
-      <section className="py-16 px-6 max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">About Me</h2>
-        <p className="text-lg text-gray-600 leading-relaxed">
-          I am passionate about helping businesses improve customer satisfaction,
-          team performance, and daily operations. My experience in customer
-          support, leadership, and administrative management has helped me build
-          strong communication, problem-solving, and organizational skills.
-        </p>
-      </section>
+  <div class="experience">
+    <h3>Teller (1 Year)</h3>
+    <p><strong>Pawnshop Services</strong></p>
 
-      {/* Contact Section */}
-      <section className="bg-gradient-to-r from-indigo-700 to-blue-600 text-white py-16 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Let’s Work Together</h2>
-          <p className="text-lg text-blue-100 mb-8">
-            Available for Virtual Assistant, Customer Support, Team Leadership,
-            and Administrative Support opportunities.
-          </p>
+    <p>
+      Handled customer transactions, cash management,
+      and day-to-day customer service responsibilities.
+    </p>
+  </div>
+</section>
 
-          <div className="grid md:grid-cols-3 gap-6 text-left">
-            <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-md">
-              <h3 className="font-semibold text-xl mb-2">Email</h3>
-              <p className="text-blue-100">yourprofessionalemail@gmail.com</p>
-            </div>
+<section>
+  <h2>Contact Information</h2>
 
-            <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-md">
-              <h3 className="font-semibold text-xl mb-2">Location</h3>
-              <p className="text-blue-100">Philippines</p>
-            </div>
+  <div class="contact-box">
+    <p><strong>Email:</strong> yourprofessionalemail@gmail.com</p>
+    <p><strong>Location:</strong> Philippines</p>
+    <p><strong>Availability:</strong> Open for Freelance & Full-time</p>
+  </div>
+</section>
 
-            <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-md">
-              <h3 className="font-semibold text-xl mb-2">Availability</h3>
-              <p className="text-blue-100">Open for Freelance & Full-time</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+<footer>
+  <p>© 2026 Efren Capangpangan Portfolio</p>
+</footer>
+
+</body>
+</html>
