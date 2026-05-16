@@ -50,7 +50,7 @@
       width: 100%;
       max-width: 1200px;
       height: 80vh;
-      align-items: flex-start;
+      align-items: center;
       z-index: 1; /* above overlay */
     }
 
@@ -60,74 +60,45 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      overflow: hidden; /* clip the enlarged image if needed */
+      padding: 20px;
     }
 
-    /* Updated profile image styles for fading borders on all sides and larger size */
+    /* Profile image without fade, larger size */
     .profile-left img {
       width: 600px;
       max-width: 100%;
       height: auto;
       object-fit: cover;
-      opacity: 0.9;
-      transition: opacity 0.3s;
-      
-      /* Fade from all sides */
-      mask-image: 
-        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to right, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to top, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to left, transparent, black 20%, black 80%, transparent);
-      mask-composite: intersect;
-      -webkit-mask-image: 
-        linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to right, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to top, transparent, black 20%, black 80%, transparent),
-        linear-gradient(to left, transparent, black 20%, black 80%, transparent);
-      -webkit-mask-composite: intersect;
+      border-radius: 10px;
+      /* Removed fade masks */
     }
 
-    .profile-left img:hover {
-      opacity: 1;
-    }
-
-    /* Right: Skills & Expertise with background fill */
+    /* Right: Skills & Expertise with background fill, now in normal position */
     .expertise-right {
+      flex: 1;
       position: relative;
-      padding-left: 30px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 20px;
-      z-index: 1;
-      overflow: hidden;
+      padding: 20px;
     }
 
-    /* The background fill for remaining space */
-    .background-fill {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%; /* Adjust as needed */
-      height: 100%;
-      background-image: url('your-photo.jpg'); /* Replace with your photo path */
-      background-size: cover;
-      background-position: center;
-      z-index: 0; /* behind content */
+    /* Optional: background fill for right side (can be removed if not needed) */
+    /* If you want a background color instead, uncomment below */
+    /*
+    .expertise-right {
+      background-color: #e0f0f9;
+      border-radius: 10px;
     }
+    */
 
-    /* Ensure content is above background fill */
-    .expertise-right > * {
-      position: relative;
-      z-index: 1;
-    }
-
+    /* Content inside expertise-right */
     .expertise-right h2 {
       font-size: 28px;
       margin-bottom: 20px;
       border-bottom: 2px solid #0f3d63;
       padding-bottom: 8px;
-      color: #fff;
+      color: #0f3d63;
     }
 
     .skills {
@@ -173,13 +144,9 @@
         flex-direction: column;
         align-items: center;
       }
-      .expertise-right {
-        padding-left: 0;
-        margin-top: 20px;
-        align-items: center;
-      }
-      .profile-left {
-        margin-bottom: 20px;
+      .profile-left, .expertise-right {
+        width: 100%;
+        padding: 10px;
       }
     }
 
@@ -201,7 +168,6 @@ section h2 {
   font-size: 28px;
   border-bottom: 2px solid #0f3d63;
   padding-bottom: 8px;
-  font-weight: bold;
 }
 
 /* Skills grid inside sections */
@@ -245,9 +211,8 @@ footer {
     <div class="profile-left">
       <img src="profile.jpg" alt="Efren Profile" />
     </div>
-    <!-- Right: Skills & Expertise with background fill -->
+    <!-- Right: Skills & Expertise -->
     <div class="expertise-right">
-      <div class="background-fill"></div>
       <h2>Skills & Expertise</h2>
       <div class="skills">
         <div class="skill-box">Customer Support</div>
