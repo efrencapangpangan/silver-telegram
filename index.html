@@ -23,81 +23,6 @@
       background-color: #f4f4f4;
     }
 
-    /* Header Styles */
-    header {
-      position: sticky;
-      top: 0;
-      background-color: #222; /* darker background for header */
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    /* Container for profile and button */
-    .header-container {
-      max-width: 1200px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    /* Profile section - left side of header */
-    .profile-section {
-      display: flex;
-      align-items: center;
-    }
-
-    /* Profile picture style */
-    .profile-section img {
-      width: 150px; /* larger size */
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      margin-right: 20px;
-    }
-
-    /* Name and subtitle in header */
-    .profile-text {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .profile-text h1 {
-      font-size: 36px;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-
-    .profile-text p {
-      font-size: 20px;
-      color: #ddd;
-    }
-
-    /* Call-to-action button in header */
-    .cta-btn {
-      margin-left: auto;
-    }
-
-    a.btn {
-      background-color: #007bff;
-      padding: 12px 24px;
-      font-size: 18px;
-      border-radius: 5px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    a.btn:hover {
-      background-color: #0056b3;
-    }
-
     /* Hero / Banner Section with layout */
     .hero {
       background: url('pexels-jplenio-1103970.jpg') no-repeat center/cover;
@@ -183,6 +108,24 @@
       background-color: #1a5c7b;
     }
 
+    /* Button styles */
+    .hire-me-btn {
+      margin-top: 20px;
+      align-self: center;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0f3d63;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hire-me-btn:hover {
+      background-color: #1a5c7b;
+    }
+
     /* Responsive adjustments */
     @media(max-width: 768px) {
       .hero-container {
@@ -252,20 +195,7 @@ footer {
 </head>
 <body>
 
-<header>
-  <div class="header-container">
-    <div class="profile-section">
-      <img src="profile.jpg" alt="Efren Profile" />
-      <div class="profile-text">
-        <h1>Efren Capangpangan</h1>
-        <p>Virtual Assistant</p>
-      </div>
-    </div>
-    <div class="cta-btn">
-      <a class="btn" href="#hire">Hire Me</a>
-    </div>
-  </div>
-</header>
+<!-- Removed the top black header -->
 
 <!-- Hero / Banner with layout -->
 <div class="hero">
@@ -289,6 +219,8 @@ footer {
         <div class="skill-box">Administrative Support</div>
         <div class="skill-box">Performance Coaching</div>
       </div>
+      <!-- Hire Me Button Centered -->
+      <button class="hire-me-btn">Hire Me</button>
     </div>
   </div>
 </div>
@@ -299,10 +231,7 @@ footer {
   <p>Experienced professional with a strong background in customer support, leadership, and operations. Passionate about helping businesses succeed with reliable virtual assistance and excellent support.</p>
 </section>
 
-<!-- Skills & Expertise (if you want a dedicated section below) -->
-<!-- Optional: remove if only top right layout is desired -->
-
-<!-- Experience -->
+<!-- Work Experience -->
 <section id="experience">
   <h2>Work Experience</h2>
   <div class="experience">
