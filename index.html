@@ -44,7 +44,7 @@
       align-items: center;
     }
 
-    /* Profile section - left side */
+    /* Profile section - left side of header */
     .profile-section {
       display: flex;
       align-items: center;
@@ -52,7 +52,7 @@
 
     /* Profile picture style */
     .profile-section img {
-      width: 150px; /* larger size for prominence */
+      width: 150px; /* larger size */
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
@@ -61,7 +61,7 @@
       margin-right: 20px;
     }
 
-    /* Name and subtitle */
+    /* Name and subtitle in header */
     .profile-text {
       display: flex;
       flex-direction: column;
@@ -78,7 +78,7 @@
       color: #ddd;
     }
 
-    /* Call-to-action button */
+    /* Call-to-action button in header */
     .cta-btn {
       margin-left: auto;
     }
@@ -98,43 +98,108 @@
       background-color: #0056b3;
     }
 
-    /* Hero / Banner Section */
+    /* Hero / Banner Section with layout */
     .hero {
       background: url('pexels-jplenio-1103970.jpg') no-repeat center/cover;
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      padding: 0 20px;
+      padding: 20px;
       position: relative;
+      color: #fff;
     }
 
-    /* Overlay for better text visibility, optional */
+    /* Overlay for text visibility */
     .hero::after {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
       background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
     }
 
-    .hero h2 {
-      position: relative;
-      font-size: 36px;
-      margin-bottom: 10px;
+    /* Container inside hero for layout: image + skills */
+    .hero-container {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      height: 80vh;
+      align-items: flex-start;
+      z-index: 1; /* above overlay */
+    }
+
+    /* Left: Profile image styling */
+    .profile-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-left img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    /* Right: Skills & Expertise */
+    .expertise-right {
+      flex: 2;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    .expertise-right h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #0f3d63;
+      padding-bottom: 8px;
       color: #fff;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-box {
+      background-color: #0f3d63;
+      color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
       font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .skill-box:hover {
+      background-color: #1a5c7b;
     }
 
-    .hero p {
-      position: relative;
-      max-width: 600px;
-      font-size: 18px;
-      color: #fff;
+    /* Responsive adjustments */
+    @media(max-width: 768px) {
+      .hero-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .expertise-right {
+        padding-left: 0;
+        margin-top: 20px;
+        align-items: center;
+      }
+      .profile-left {
+        margin-bottom: 20px;
+      }
     }
 
-    /* Sections styles (adding some spacing & borders similar to screenshot) */
+    /* Sections styles (spacing & borders) */
 section {
   max-width: 1000px;
   margin: 40px auto;
@@ -155,7 +220,7 @@ section h2 {
   font-weight: bold;
 }
 
-/* Skills grid */
+/* Skills grid inside sections */
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -175,59 +240,13 @@ section h2 {
   background-color: #1a5c7b;
 }
 
-.experience {
-  margin-bottom: 20px;
-}
-
+/* Footer styles */
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-}
-
-/* Contact Box Styles */
-.contact-box {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Buttons & Links */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #0f3d63;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-.btn:hover {
-  background-color: #1a5c7b;
-}
-
-/* Responsive adjustments */
-@media(max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  /* adjust header container for small screens */
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .cta-btn {
-    margin-top: 10px;
-  }
-  .profile-text {
-    align-items: flex-start;
-  }
 }
 </style>
 </head>
@@ -248,10 +267,30 @@ footer {
   </div>
 </header>
 
-<!-- Hero / Banner -->
-<div class="hero" style="background-image: url('pexels-jplenio-1103970.jpg');">
-  <h2>Customer Support Leader. Problem Solver.</h2>
-  <p>Your Reliable Virtual Assistant.</p>
+<!-- Hero / Banner with layout -->
+<div class="hero">
+  <div class="hero-container">
+    <!-- Left: Profile Picture -->
+    <div class="profile-left">
+      <img src="profile.jpg" alt="Efren Profile" />
+    </div>
+    <!-- Right: Skills & Expertise -->
+    <div class="expertise-right">
+      <h2>Skills & Expertise</h2>
+      <div class="skills">
+        <div class="skill-box">Customer Support</div>
+        <div class="skill-box">Team Leadership</div>
+        <div class="skill-box">Virtual Assistance</div>
+        <div class="skill-box">Email & Chat Support</div>
+        <div class="skill-box">Operations Management</div>
+        <div class="skill-box">Data Entry</div>
+        <div class="skill-box">Delivery Coordination</div>
+        <div class="skill-box">Escalation Handling</div>
+        <div class="skill-box">Administrative Support</div>
+        <div class="skill-box">Performance Coaching</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- About Me -->
@@ -260,22 +299,8 @@ footer {
   <p>Experienced professional with a strong background in customer support, leadership, and operations. Passionate about helping businesses succeed with reliable virtual assistance and excellent support.</p>
 </section>
 
-<!-- Skills & Expertise -->
-<section id="skills">
-  <h2>Skills & Expertise</h2>
-  <div class="skills">
-    <div class="skill-box">Customer Support</div>
-    <div class="skill-box">Team Leadership</div>
-    <div class="skill-box">Virtual Assistance</div>
-    <div class="skill-box">Email & Chat Support</div>
-    <div class="skill-box">Operations Management</div>
-    <div class="skill-box">Data Entry</div>
-    <div class="skill-box">Delivery Coordination</div>
-    <div class="skill-box">Escalation Handling</div>
-    <div class="skill-box">Administrative Support</div>
-    <div class="skill-box">Performance Coaching</div>
-  </div>
-</section>
+<!-- Skills & Expertise (if you want a dedicated section below) -->
+<!-- Optional: remove if only top right layout is desired -->
 
 <!-- Experience -->
 <section id="experience">
