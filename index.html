@@ -4,107 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Efren Capangpangan Portfolio</title>
- <style>
-  /* Reset & Base Styles (unchanged) */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  html {
-    scroll-behavior: smooth;
-  }
+    html {
+      scroll-behavior: smooth;
+    }
 
-  body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
 
-  /* Header Styles */
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #222; /* darker background */
-    padding: 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    z-index: 1000;
-  }
+    /* Header Styles */
+    header {
+      position: sticky;
+      top: 0;
+      background-color: #222; /* darker background for header */
+      padding: 20px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      z-index: 1000;
+    }
 
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
+    /* Profile info */
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
 
-  header h1 {
-    font-size: 24px;
-    margin-right: 15px;
-  }
+    header h1 {
+      font-size: 24px;
+      margin-right: 15px;
+    }
 
-  header img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-  }
+    /* Profile picture style */
+    header img {
+      width: 100px; /* adjusted size */
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%; /* circular shape */
+      border: 3px solid #fff; /* white border for contrast */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow for depth */
+    }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-  }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
 
-  /* Hero Section */
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    background: url('pexels-jplenio-1103970.jpg') no-repeat center/cover;
-    position: relative;
-  }
+    /* Hero / Banner Section */
+    .hero {
+      background: url('pexels-jplenio-1103970.jpg') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
 
-  /* Overlay for contrast */
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-  }
+    /* Overlay for better text visibility, optional */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
 
-  .hero h2 {
-    position: relative;
-    font-size: 30px; /* slightly smaller for balance */
-    margin-bottom: 10px;
-    color: #fff;
-    font-weight: bold;
-  }
+    .hero h2 {
+      position: relative;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
 
-  .hero p {
-    position: relative;
-    max-width: 600px;
-    font-size: 18px;
-    color: #fff;
-  }
+    .hero p {
+      position: relative;
+      max-width: 600px;
+      font-size: 18px;
+      color: #fff;
+    }
 
-  /* Sections */
+    /* Sections styles (adding some spacing & borders similar to screenshot) */
 section {
   max-width: 1000px;
   margin: 40px auto;
@@ -120,205 +123,12 @@ section h2 {
   margin-bottom: 20px;
   color: #0f3d63;
   font-size: 28px;
-  font-weight: bold;
   border-bottom: 2px solid #0f3d63;
   padding-bottom: 8px;
+  font-weight: bold;
 }
 
 /* Skills grid */
-.skills {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-.skill-box {
-  background-color: #0f3d63;
-  color: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.skill-box:hover {
-  background-color: #1a5c7b;
-}
-
-/* Experience */
-.experience {
-  margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-/* Contact Box */
-.contact-box {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* "Hire Me" Button */
-a.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-top: 10px;
-  background-color: #0f3d63;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-a.btn:hover {
-  background-color: #1a5c7b;
-}
-
-/* Responsive adjustments */
-@media(max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav {
-    margin-top: 10px;
-  }
-  .header-left {
-    margin-bottom: 10px;
-  }
-}
-</style>
-  <style>
-  /* Reset & Base Styles (unchanged) */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
-
-  /* Header Styles */
-  header {
-    position: sticky;
-    top: 0;
-    background-color: #222; /* darker background for header */
-    padding: 20px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    z-index: 1000;
-  }
-
-  /* Profile info */
-  .header-left {
-    display: flex;
-    align-items: center;
-  }
-
-  header h1 {
-    font-size: 24px;
-    margin-right: 15px;
-  }
-
-  header img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-  }
-
-  /* Hero / Banner */
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    background: url('pexels-jplenio-1103970.jpg') no-repeat center/cover;
-    position: relative;
-  }
-
-  /* Overlay for better text visibility, optional */
-  .hero::after {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
-  }
-
-  .hero h2 {
-    position: relative;
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  .hero p {
-    position: relative;
-    max-width: 600px;
-    font-size: 18px;
-    color: #fff;
-  }
-
-  /* Sections styles (adding some spacing & borders similar to screenshot) */
-section {
-  max-width: 1000px;
-  margin: 40px auto;
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 1;
-}
-
-section h2 {
-  margin-bottom: 20px;
-  color: #0f3d63;
-  font-size: 28px;
-  border-bottom: 2px solid #0f3d63;
-  padding-bottom: 8px;
-}
-
 .skills {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -367,6 +177,7 @@ footer {
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
+  font-weight: bold;
   transition: background-color 0.3s;
 }
 .btn:hover {
