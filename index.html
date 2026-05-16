@@ -91,14 +91,35 @@
       opacity: 1;
     }
 
-    /* Right: Skills & Expertise */
+    /* Right: Skills & Expertise with background fill */
     .expertise-right {
-      flex: 2;
+      position: relative;
       padding-left: 30px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       margin-top: 20px;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    /* The background fill for remaining space */
+    .background-fill {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%; /* Adjust as needed */
+      height: 100%;
+      background-image: url('your-photo.jpg'); /* Replace with your photo path */
+      background-size: cover;
+      background-position: center;
+      z-index: 0; /* behind content */
+    }
+
+    /* Ensure content is above background fill */
+    .expertise-right > * {
+      position: relative;
+      z-index: 1;
     }
 
     .expertise-right h2 {
@@ -224,8 +245,9 @@ footer {
     <div class="profile-left">
       <img src="profile.jpg" alt="Efren Profile" />
     </div>
-    <!-- Right: Skills & Expertise -->
+    <!-- Right: Skills & Expertise with background fill -->
     <div class="expertise-right">
+      <div class="background-fill"></div>
       <h2>Skills & Expertise</h2>
       <div class="skills">
         <div class="skill-box">Customer Support</div>
