@@ -28,47 +28,74 @@
       position: sticky;
       top: 0;
       background-color: #222; /* darker background for header */
-      padding: 20px 40px;
+      padding: 40px 20px;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      color: #fff;
       z-index: 1000;
     }
 
-    /* Profile info */
-    .header-left {
+    /* Container for profile and button */
+    .header-container {
+      max-width: 1200px;
+      width: 100%;
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
 
-    header h1 {
-      font-size: 24px;
-      margin-right: 15px;
+    /* Profile section - left side */
+    .profile-section {
+      display: flex;
+      align-items: center;
     }
 
     /* Profile picture style */
-    header img {
-      width: 100px; /* adjusted size */
-      height: 100px;
+    .profile-section img {
+      width: 150px; /* larger size for prominence */
+      height: 150px;
       object-fit: cover;
-      border-radius: 50%; /* circular shape */
-      border: 3px solid #fff; /* white border for contrast */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow for depth */
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      margin-right: 20px;
     }
 
-    nav {
+    /* Name and subtitle */
+    .profile-text {
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      flex-direction: column;
     }
 
-    nav a {
+    .profile-text h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
       color: #fff;
+    }
+
+    .profile-text p {
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    /* Call-to-action button */
+    .cta-btn {
+      margin-left: auto;
+    }
+
+    a.btn {
+      background-color: #007bff;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 5px;
       text-decoration: none;
-      margin-left: 20px;
+      color: #fff;
       font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    a.btn:hover {
+      background-color: #0056b3;
     }
 
     /* Hero / Banner Section */
@@ -190,11 +217,16 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  nav {
+  /* adjust header container for small screens */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cta-btn {
     margin-top: 10px;
   }
-  .header-left {
-    margin-bottom: 10px;
+  .profile-text {
+    align-items: flex-start;
   }
 }
 </style>
@@ -202,17 +234,18 @@ footer {
 <body>
 
 <header>
-  <div class="header-left">
-    <h1>Efren Capangpangan</h1>
-    <img src="profile.jpg" alt="Efren Profile" />
+  <div class="header-container">
+    <div class="profile-section">
+      <img src="profile.jpg" alt="Efren Profile" />
+      <div class="profile-text">
+        <h1>Efren Capangpangan</h1>
+        <p>Virtual Assistant</p>
+      </div>
+    </div>
+    <div class="cta-btn">
+      <a class="btn" href="#hire">Hire Me</a>
+    </div>
   </div>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-    <a class="btn" href="#hire">Hire Me</a>
-  </nav>
 </header>
 
 <!-- Hero / Banner -->
