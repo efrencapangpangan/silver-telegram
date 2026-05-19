@@ -125,6 +125,23 @@
       background-color: #1a5c7b;
     }
 
+    /* Resume Button */
+    .resume-btn {
+      margin-top: 10px; /* spacing above the button */
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0f3d63;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .resume-btn:hover {
+      background-color: #1a5c7b;
+    }
+
     /* Responsive adjustments */
     @media(max-width: 768px) {
       .hero-container {
@@ -210,6 +227,10 @@ footer {
         <div class="skill-box">Performance Coaching</div>
       </div>
       <button class="hire-me-btn">Hire Me</button>
+      <!-- Resume Button wrapped in link -->
+      <a href="your-resume.pdf" target="_blank" rel="noopener noreferrer">
+        <button class="resume-btn">View Resume</button>
+      </a>
     </div>
     <!-- Profile picture on the right -->
     <div class="profile-right">
